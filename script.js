@@ -11,6 +11,33 @@
 //
 // * Gather user input with prompt's and confirm's
 
+function getRandomLower() {
+  var lower = "abcdefghijklmnopqrstuvwxyz";
+  return lower[Math.floor(Math.random() * lower.length)];
+}
+
+function getRandomUpper() {
+  var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  return upper[Math.floor(Math.random() * upper.length)];
+}
+
+function getRandomNumber() {
+  var num = "0123456789";
+  return num[Math.floor(Math.random() * num.length)];
+}
+
+function getRandomSymbol() {
+  var symbol = "~!@#$%^&*()<>/{}=[],.";
+  return symbol[Math.floor(Math.random() * symbol.length)];
+}
+// return(getRandomLower());
+console.log(getRandomLower());
+console.log(getRandomUpper());
+console.log(getRandomNumber());
+console.log(getRandomSymbol());
+
+// Math is not defined when ran
+
 ///////////////////////////////////////////////////////////////////////
 // DO NOT TOUCH THIS CODE
 //
@@ -18,18 +45,19 @@
 // * clicking the Generate Password
 // * writing the password to the screen
 //
-
-var generateBtn = document.querySelector("#generate");
+// uncomment line below
+// var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// uncomment line below too 39. skip 41 and uncomment 42
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-}
+//   passwordText.value = password;
+// }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword);
 
-//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
