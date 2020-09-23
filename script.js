@@ -10,13 +10,17 @@
 //   generatePassword
 //
 // * Gather user input with prompt's and confirm's
+
+// creating a variable for the document selector generate button
 var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
+//declaring variables 
 var upper;
 var lower;
 var numberS;
 var special;
 
+//functions for gathering random data upper,lower,number,special characters
 function getRandomUpper() {
   upper = [
     "A",
